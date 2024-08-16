@@ -1,0 +1,21 @@
+seed = 0
+
+[data]
+normalization = 'standard'
+path = 'data/helena'
+
+[model]
+activation = 'reglu'
+d_token = 358
+initialization = 'kaiming'
+n_layers = 3
+prenormalization = true
+
+[training]
+batch_size = 512
+eval_batch_size = 256
+lr = 1.129395446920912e-05
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 4.242512359468292e-06

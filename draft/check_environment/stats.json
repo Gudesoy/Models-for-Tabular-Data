@@ -1,0 +1,68 @@
+{
+    "dataset": "california_housing",
+    "algorithm": "mlp",
+    "config": {
+        "data": {
+            "normalization": "quantile",
+            "path": "data/california_housing",
+            "y_policy": "mean_std"
+        },
+        "model": {
+            "d_layers": [
+                510,
+                263,
+                363
+            ],
+            "dropout": 0.1973063643675128
+        },
+        "seed": 0,
+        "training": {
+            "batch_size": 256,
+            "eval_batch_size": 8192,
+            "lr": 0.001304086404538407,
+            "n_epochs": 1000000000,
+            "optimizer": "adamw",
+            "patience": 16,
+            "weight_decay": 0.0001516844843295177
+        }
+    },
+    "environment": {
+        "devices": {
+            "CUDA_VISIBLE_DEVICES": "0,1",
+            "torch.version.cuda": "11.7",
+            "torch.backends.cudnn.version()": 8500,
+            "torch.cuda.nccl.version()": [
+                2,
+                14,
+                3
+            ],
+            "driver": "b'535.171.04'",
+            "0": {
+                "name": "b'NVIDIA GeForce RTX 4090'",
+                "total_memory": 25757220864
+            },
+            "1": {
+                "name": "b'NVIDIA GeForce RTX 4090'",
+                "total_memory": 25757220864
+            }
+        }
+    },
+    "epoch_size": 52,
+    "n_parameters": 235179,
+    "best_epoch": 71,
+    "metrics": {
+        "train": {
+            "rmse": 0.38293339895067313,
+            "score": -0.38293339895067313
+        },
+        "val": {
+            "rmse": 0.5050944628047218,
+            "score": -0.5050944628047218
+        },
+        "test": {
+            "rmse": 0.5029019139092814,
+            "score": -0.5029019139092814
+        }
+    },
+    "time": "0:00:17"
+}

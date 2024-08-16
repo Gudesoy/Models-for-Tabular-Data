@@ -1,0 +1,23 @@
+seed = 0
+
+[data]
+normalization = 'quantile'
+path = 'data/california_housing'
+y_policy = 'mean_std'
+
+[model]
+activation = 'reglu'
+d_token = 469
+initialization = 'kaiming'
+n_layers = 2
+prenormalization = true
+
+[training]
+batch_size = 256
+eval_batch_size = 256
+lr = 0.0004599273287595264
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 9.503967490862915e-06
+

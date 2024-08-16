@@ -1,0 +1,26 @@
+seed = 0
+
+[data]
+normalization = 'standard'
+path = 'data/helena'
+
+[model]
+activation = 'reglu'
+attention_dropout = 0.0285546597660816
+d_ffn_factor = 0.9947726555299804
+d_token = 368
+ffn_dropout = 0.3843252825590389
+initialization = 'kaiming'
+n_heads = 8
+n_layers = 2
+prenormalization = true
+residual_dropout = 0.0
+
+[training]
+batch_size = 512
+eval_batch_size = 256
+lr = 2.51530496508373e-05
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 4.711456331315081e-05

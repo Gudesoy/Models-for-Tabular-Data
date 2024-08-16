@@ -1,0 +1,21 @@
+seed = 0
+
+[data]
+normalization = 'quantile'
+path = 'data/jannis'
+
+[model]
+activation = 'reglu'
+d_token = 406
+initialization = 'kaiming'
+n_layers = 3
+prenormalization = true
+
+[training]
+batch_size = 256
+eval_batch_size = 256
+lr = 0.0005526812837366344
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 1.831022985178096e-06

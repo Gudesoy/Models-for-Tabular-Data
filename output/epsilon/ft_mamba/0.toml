@@ -1,0 +1,21 @@
+seed = 0
+
+[data]
+path = 'data/epsilon'
+
+[model]
+activation = 'reglu'
+d_token = 32
+initialization = 'kaiming'
+n_layers = 4
+prenormalization = true
+
+[training]
+batch_size = 1
+eval_batch_size = 1
+lr = 0.0001
+lr_n_decays = 0
+n_epochs = 1
+optimizer = 'adamw'
+patience = 16
+weight_decay = 1e-05
